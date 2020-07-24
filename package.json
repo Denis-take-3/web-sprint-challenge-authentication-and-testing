@@ -21,11 +21,16 @@
     "axios": "^0.19.2",
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "helmet": "^3.22.0",
-    "knex": "^0.21.0",
-    "sqlite3": "^4.1.1"
+    "helmet": "^3.23.3",
+    "knex": "^0.21.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.3"
+    "bcryptjs": "^2.4.3",
+    "connect-session-knex": "^1.7.3",
+    "express-session": "^1.17.1",
+    "jest": "^26.1.0",
+    "nodemon": "^2.0.4",
+    "sqlite3": "^4.2.0",
+    "supertest": "^4.0.2"
   }
 }
