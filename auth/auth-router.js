@@ -14,11 +14,11 @@ router.post('/register', (req, res) => {
 
   Users.add(creds)
     .then((saved) => {
-      console.log(saved);
+      // console.log(`\n! From Router !\n`, saved);
       res.status(201).json({ data: saved });
     })
     .catch((error) => {
-      console.log(error);
+      // console.log(error);
       res.status(500).json({ error: error.message });
     });
 });

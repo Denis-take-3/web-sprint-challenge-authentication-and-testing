@@ -4,7 +4,8 @@
   "description": "Authentication Sprint Challenge",
   "main": "index.js",
   "scripts": {
-    "server": "nodemon index.js"
+    "server": "nodemon index.js",
+    "test": "cross-env NODE_ENV=testing jest --watch"
   },
   "repository": {
     "type": "git",
@@ -20,9 +21,13 @@
   "dependencies": {
     "axios": "^0.19.2",
     "cors": "^2.8.5",
+    "cross-env": "^7.0.2",
     "express": "^4.17.1",
     "helmet": "^3.23.3",
     "knex": "^0.21.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
   },
   "devDependencies": {
     "bcryptjs": "^2.4.3",
